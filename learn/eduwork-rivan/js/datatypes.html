@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+            <h1>Type data</h1>
+            <h3> Dynamis </h3>
+            <p id="dynamic-types"></p>
+            <h3> String </h3>
+            <p id="string"></p>
+            <h3> Number </h3>
+            <p id="number"></p>
+            <h3> Boolean </h3>
+            <p id="boolean"></p>
+            <h3> Array </h3>
+            <p id="array"></p>
+            <h3> Object </h3>
+            <p id="object"></p>
+            <h3> Type Of </h3>
+            <p id="type"></p>
+
+            <script>
+
+                let x;
+                x = "Rivan"; //nilai x skrg Rivan (string)
+                x = 21;   //nilai x adalah 21 (number)
+                document.getElementById("dynamic-types").innerHTML = "Output nilai x adalah " + x;//ini adalah tipe data dinamis dimana hasil akhir yg ditampilkan adalah nilai terakhir
+                "<br>"
+                
+                let kalimat1 = "Halo "; //kalimat pertama
+                let kalimat2 = "Nama saya "; //kalimat kedua
+                let kalimat3 = "Rivan Azhar"; //kalimat ketiga
+                document.getElementById("string").innerHTML = "Output kalimat 1-3 adalah " + kalimat1 + kalimat2 + kalimat3;
+                "<br>"
+
+                let nilai_x = 10; //angka pertama
+                let nilai_y = 21; //angka kedua
+                let nilai_z = nilai_x * nilai_y;
+                document.getElementById("number").innerHTML = "Output data number, nilai x : " + (nilai_x) + " " + "nilai y1 : " + (nilai_y) + 
+                "<br> Jika di lakukan perkalian maka hasilnya " + (nilai_z);
+                "<br>"
+
+                let nilai_x1 = 10; //angka pertama
+                let nilai_y1 = 15; //angka kedua
+                let nilai_z1 = 10; //angka ketiga
+                document.getElementById("boolean").innerHTML = 
+                "Output data bolean, nilai x1 : " + (nilai_x1) + " " + "nilai y1 : " + (nilai_y1) + 
+                "<br> Sehingga jika di bandingkan maka hasilnya " + (nilai_x1 == nilai_y1);
+                "<br>"
+
+                const laptop = ["Macbook","Lenovo","Dell"];
+                document.getElementById("array").innerHTML = "Ini adalah tipe data array, saya ingin menampilkan data array nomer 2 output hasil nya adalah Laptop " + laptop[2];
+                "<br>"
+
+                const datadiri = {
+                    nama : "Rivan",
+                    umur : 25,
+                    pekerjaan : 'Karyawan Swasta'
+                };
+                document.getElementById("object").innerHTML = "Ini adalah tipe data object, Nama saya " + datadiri.nama + " " + "usia " + datadiri.umur + " " + "job " + datadiri.pekerjaan;
+                "<br>"
+
+                let length = 16; //tipe data number
+                let lastName = "Champion"; //type data string
+                const s = { //tipe data object
+                    firstName : "John",
+                    lastName : "Champion"
+                };
+
+                document.getElementById("type").innerHTML = "Hasil tipe data variable length adalah " + typeof length + "<br>" + 
+                "Hasil tipe data variable lastName adalah " + typeof lastName +"<br>" +
+                "Hasil tipe data variable lastName adalah " + typeof s;
+
+            </script>
+    </body>
+</html>
