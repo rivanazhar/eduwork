@@ -9,8 +9,8 @@ class searchPage {
     static visit () {
         cy.visit(URL)
     }
-    static fill_searchbox() {
-        cy.get(keyword).type('flip{enter}')
+    static fill_searchbox(searchkey) {
+        cy.get(keyword).type(`${searchkey}{enter}`)
     }
 } 
     

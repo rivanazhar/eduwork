@@ -4,6 +4,7 @@
     const USERNAME = '#user_login'
     const PASSWORD = '#user_password'
     const SIGN_IN = 'input[name="submit"]'
+    
 
 class loginPage {
 
@@ -11,18 +12,11 @@ class loginPage {
         cy.visit(URL)
     }
 
-    static fillUsername(valid_user) {
-        cy.get(USERNAME).type('username')
+    static fillUsername(username) {
+        cy.get(USERNAME).type(username)
     }
-    static fillPassword(valid_password) {
-        cy.get(PASSWORD).type('password')
-    }
-
-    static fillInvalidUsername(invalid_user) {
-        cy.get(USERNAME).type('rivan')
-    }
-    static fillInvalidPassword(invalid_password) {
-        cy.get(PASSWORD).type('ganteng')
+    static fillPassword(password) {
+        cy.get(PASSWORD).type(password)
     }
 
     static signIn() {

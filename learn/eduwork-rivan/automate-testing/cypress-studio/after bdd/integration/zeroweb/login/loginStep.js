@@ -8,8 +8,8 @@ Given('I open login page', () => {
  })
 
  When('I input valid user-password and I submit login', () => {
-    loginPage.fillUsername('valid_user')
-    loginPage.fillPassword('valid_password')
+    loginPage.fillUsername('username')
+    loginPage.fillPassword('password')
     loginPage.signIn()
  })
  
@@ -22,8 +22,8 @@ Given('I open login page', () => {
  })
 
  When('I input invalid user-password and I submit login', () => {
-    loginPage.fillInvalidUsername('invalid_user')
-    loginPage.fillInvalidPassword('invalid_password')
+    loginPage.fillUsername('rivan')
+    loginPage.fillPassword('ganteng')
     loginPage.signIn()
  })
  
