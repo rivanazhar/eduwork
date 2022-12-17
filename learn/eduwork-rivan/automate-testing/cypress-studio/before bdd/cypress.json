@@ -1,0 +1,8 @@
+{
+  "integrationFolder": "cypress/integration",
+  "env": {
+      "userName": "admin",
+      "userPassword": "ganteng",
+      "apiUrl": "https://j3vme.mocklab.io/"
+    }
+}
