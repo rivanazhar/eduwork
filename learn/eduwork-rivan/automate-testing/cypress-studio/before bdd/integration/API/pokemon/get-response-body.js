@@ -1,7 +1,7 @@
 /// <reference types = "cypress" />
 
 
-describe('Validate header on API', () => {
+describe('Validate response body on API', () => {
     it.only('Get response Body', () => {
         cy.request('https://pokeapi.co/api/v2/pokemon/ditto').as('pokemon')
         
